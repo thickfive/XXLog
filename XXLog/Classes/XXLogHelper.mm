@@ -25,7 +25,7 @@ static NSUInteger g_processID = 0;
     const char * path = [logConfig.path UTF8String];
     const char * pubKey = logConfig.pubKey ? [logConfig.pubKey UTF8String] : "";
     
-    const char* attrName = "com.xxlog.backup";
+    const char* attrName = "com.apple.MobileBackup";
     u_int8_t attrValue = 1;
     setxattr(path, attrName, &attrValue, sizeof(attrValue), 0, 0);
     xlogger_SetLevel((TLogLevel)logConfig.level);
