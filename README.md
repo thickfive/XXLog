@@ -116,3 +116,7 @@ mars项目本身不支持xcframework，在m1机器多模拟器上只能以rosett
 环境：新建项目release方式run在iphonexr上
 新打包大小： 184kb
 添加XXLog后打包大小：1.1MB
+
+## 源码编译包体积大小
+✅ python3 build_ios.py 后再输入 2, 这样只包含 xlog (8.5M)
+❌ python3 build_ios.py 2, 这样还是完整的 mars (41.8M)
